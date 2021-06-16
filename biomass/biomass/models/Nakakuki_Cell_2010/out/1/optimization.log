@@ -227,7 +227,13 @@ Generating the initial population. . .
 
 ----------------------------------------
 
-Generation1: Best Fitness = 6.876800e+00
-Generation2: Best Fitness = 6.876800e+00
-Generation3: Best Fitness = 3.440425e+00
-Generation4: Best Fitness = 2.566536e+00
+Generation1: Best Fitness = 6.298546e+00
+Generation2: Best Fitness = 2.636537e+00
+Generation3: Best Fitness = 2.636537e+00
+Generation4: Best Fitness = 1.966520e+00
+Generation5: Best Fitness = 1.775048e+00
+Generation6: Best Fitness = 1.775048e+00
+Generation7: Best Fitness = 1.701507e+00
+Generation8: Best Fitness = 1.666755e+00
+Generation9: Best Fitness = 1.666755e+00
+Generation10: Best Fitness = 8.729801e-01
