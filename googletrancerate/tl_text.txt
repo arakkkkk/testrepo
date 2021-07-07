@@ -1,0 +1,68 @@
+A draft reconstruction of the glycosylation, metabolism, and nucleotide sugar transport systems was created using the CHO-K1 and
+Chinese hamster genome annotations, comprehensive reaction databases for candidate enzymatic functions, and published experimental
+data. To follow the genome reconstruction methodology, glycosylation
+genes were organized into functional classes, a CHO-specific metabolic
+map (Supp. Fig. 1) was defined, and substrate and cofactor usage,
+neutral enzymatic reactions, gene and reaction localization, heteromeric enzyme complexes, isozyme functionalities, intracellular transport mechanisms, and supporting metabolic reactions were all verified.
+The mathematical model was created using media feed components,
+fuzzy enzyme parameters (0−5) representing each enzyme's flux to
+determine the likely glycoform composition (a fuzzy parameter is the
+quantitative value of a variable that has been transformed to a discretized parameter state within bins) (Sokhansanj et al., 2009), and
+simplified enzyme reaction kinetics dependent upon the discretized
+parameter values (that is, a reaction rate that is a single discrete value
+rather than modeled using, for example, Michaelis-Menton rate expressions). Unbalanced or missing reactions as well as reaction directionality and limitations were identified and rectified. The GlycoMapper flux parameters emulate the transcriptomic and proteomic data
+(if available). If the fluxes are not measured, the parameters are set to
+minimize the number of differences between the experimental reference glycoform and the resulting Glyco-Mapper glycoform, enabling
+one to predict the biotherapeutic glycosylation phenotype from singlegene (or multi-gene) changes in a method similar to Khodayari et al.
+(2014). Specifically, the collection of glycans in production within the
+cell is initially calculated by evaluating the algorithms demonstrated in
+Supp. Tables 5–7 per the reactions defined in Supp. Tables 1–2 to model
+the active glycosylation and CCM gene fluxes. The collection of glycans
+is then altered using the fuzzy enzyme parameters and simplified enzyme reaction kinetics as listed in Supp. Table 8 to predict a final
+glycoform.
+Glyco-Mapper inputs include the type of recombinant protein (mAb
+or non-mAb) and a cellular location of the glycoprotein (secreted or
+intracellula because both parameters affect the potential glycoform.
+The input list of media sugar components enables nucleotide sugar
+reaction metabolism calculations and permits the calculation of nucleotide sugar production and availability as additional input variables.
+Each glycosylation and metabolism gene parameter is an input variable
+that accounts for the flux of the corresponding enzyme, discretely
+ranging in value between 0 and 5, to determine the potential glycoform
+composition using flux profile fitting. Parameter values are adapted
+from transcriptomic data, but if data is not available, the input parameters were selected empirically in a manual and iterative process in
+accordance with experimental observations to achieve minimal differences between the predicted and experimental reference glycoforms.
+Glyco-Mapper outputs include a list of the predicted glycoform
+glycan composition as well as a count of the glycans within each glycoform. Glyco-Mapper generates four glycoform lists dependent upon
+two different parameters, glycan classification (the individual glycans
+(A3G1, A3G2, A3G3) or glycan monosaccharide groupings (A3G)), and
+secretion classification (the likely secreted glycoform (glycans to be
+secreted from the cell) or comprehensive intracellular glycoform composition (glycans that will not be secreted from the cell)). Each combination of parameters yields a slightly different glycoform view and
+understanding of the glycosylation reaction network. Lastly, an optional user-selected glycan is predicted to be present or absent in the
+final glycoform, and if absent, the metabolism or glycosylation genes
+preventing the glycan's production are identified. Glyco-Mapper in the
+current form is only able to predict each glycan in a binary form
+(presence or absence), not the various quantitative glycan
+concentrations or levels. This feature is a result of the lack of traditional
+enzymatic rate equations (Michaelis-Menten kinetics) and was done
+with the goal of establishing Glyco-Mapper version 1.0 as a glycosylation network prediction tool that combines ease of use with CHO-specific genomic accuracy.
+3.2. Statistical information
+For each predicted glycoform, the accuracy, specificity, and sensitivity statistics are solely representative of the predicted glycoforms,
+and not the reference glycoforms or any combination thereof. The accuracy percentage represents the percentage of correct glycan predictions within the experimentally-modified glycoform and was calculated
+as the sum of experimentally-validated, present and absent glycans
+predicted divided by the total number of glycans within the glycoform.
+The specificity percentage represents the true negative prediction rate,
+calculated as the number of both predicted and experimentally absent
+glycans divided by the total number of experimentally absent glycans.
+The sensitivity percentage represents the true positive prediction rate,
+calculated as the number of both predicted and experimentally present
+glycans divided by the total number of experimentally present glycans.
+The delta accuracy percentage represents the accuracy rate of the glycans that changed either their prediction or experimental status between the reference and predicted glycoforms, calculated as the number
+of correctly predicted glycans that changed status divided by the total
+number of glycans that changed status. The relative glycan composition
+deemed to be statistically significant and a non-minor peak was a
+composition greater than 1% for all literature and experimental calculations in a method similar to Fukuta et al. (2001).
+The GnT-II siRNA knockdown qRT-PCR data was analyzed as technical triplicates of biological triplicates (Supp. Fig. 4). The results were
+statistically analyzed in JMP and the two sample one-sided t-test was
+conducted assuming unequal variances with an alpha of 0.05 and resulting in p < 0.0001. The difference between the average GnT-II
+knockdown and negative control samples was 2.51, the t ratio was 7.5,
+the standard error difference was 0.335, and the degrees of freedom

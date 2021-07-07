@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  cppdev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cppdev
+    container_name: cppdev
+    volumes:
+      - type: bind
+        source: .
+        target: /cppdev
+    stdin_open: true
+    tty: true
+    working_dir: /cppdev/src/build
