@@ -1,0 +1,4 @@
+/Users/arakawakouichi/local_file/testrepo/cpp/run_copasi/build/CMakeFiles/rebuild_cache.dir
+/Users/arakawakouichi/local_file/testrepo/cpp/run_copasi/build/CMakeFiles/edit_cache.dir
+/Users/arakawakouichi/local_file/testrepo/cpp/run_copasi/build/CMakeFiles/a.out.dir
+/Users/arakawakouichi/local_file/testrepo/cpp/run_copasi/build/CMakeFiles/test_cmake.dir
