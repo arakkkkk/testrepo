@@ -22,6 +22,7 @@ def main(wav_path, model_wav_path, text_path):
 if __name__ == "__main__":
     directories = [
             "08_09_22_line1_minus",
+            "08_09_22_line1_plus",
             ]
     for directory in directories:
         wav_path = f"{directory}/wav.wav"
