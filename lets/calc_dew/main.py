@@ -23,7 +23,7 @@ if __name__ == "__main__":
     directories = [
             "08_09_22_line1_minus",
             "08_09_22_line1_plus",
-            "test",
+            "whole_plus",
             ]
     for directory in directories:
         wav_path = f"{directory}/wav.wav"
