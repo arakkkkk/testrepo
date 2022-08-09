@@ -29,4 +29,4 @@ if __name__ == "__main__":
         model_wav_path = f"{directory}/model_wav.wav"
         text_path = f"{directory}/text.text"
         res =  main(wav_path, model_wav_path, text_path)
-        print(res)
+        print(res.json())
