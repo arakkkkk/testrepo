@@ -3,7 +3,7 @@ import json
 import base64
 import re
 
-GPU_SERVER = "http://gpu-kaldi:5000"
+GPU_SERVER = "http://localhost:5050"
 
 def preprocess_word(txt):
     """change text to the right format for kaldi"""
