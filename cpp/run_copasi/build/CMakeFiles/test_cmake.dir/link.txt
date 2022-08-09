@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libtest_cmake.a CMakeFiles/test_cmake.dir/main.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libtest_cmake.a
