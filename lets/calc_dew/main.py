@@ -23,6 +23,7 @@ if __name__ == "__main__":
     directories = [
             "08_09_22_line1_minus",
             "08_09_22_line1_plus",
+            "08_09_22_line1_plus__",
             "whole_plus",
             ]
     for directory in directories:
